@@ -20,6 +20,6 @@ public class SplashActivity extends AppCompatActivity {
             Intent intent = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(intent);
             finish(); // Close SplashActivity so it's not in the back stack
-        }, 5000); // 1.5 seconds
+        }, 100); // 1.5 seconds
     }
 }

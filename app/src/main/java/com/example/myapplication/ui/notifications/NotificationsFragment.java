@@ -29,6 +29,9 @@ public class NotificationsFragment extends Fragment {
         TextView topbarTitle = root.findViewById(R.id.title_topbar);
         topbarTitle.setText("Notifications");
 
+        TextView btn = root.findViewById(R.id.button2);
+        btn.setText("clear all");
+
 //        final TextView textView = binding.textNotifications;
 //        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
