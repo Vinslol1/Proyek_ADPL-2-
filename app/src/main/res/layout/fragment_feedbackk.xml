@@ -31,9 +31,12 @@
         android:layout_width="377dp"
         android:layout_height="679dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:padding="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:layout_editor_absoluteX="8dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,7 +54,7 @@
             <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:spinnerMode="dropdown" />
 
             <TextView
@@ -66,13 +69,29 @@
             <EditText
                 android:id="@+id/editTextTextMultiLine"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="Tulis deskripsi"
                 android:inputType="textMultiLine"
                 android:outlineSpotShadowColor="#B83A3A"
                 android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Lampiran"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/btnPickFile"
+                android:layout_width="179dp"
+                android:layout_height="242dp"
+                android:src="@android:drawable/ic_menu_gallery" />
+
 
         </LinearLayout>
     </ScrollView>
